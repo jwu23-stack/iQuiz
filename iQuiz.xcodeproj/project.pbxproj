@@ -13,6 +13,8 @@
 		EDA4F7A9282B29A800E98ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA4F7A7282B29A800E98ED6 /* Main.storyboard */; };
 		EDA4F7AB282B29AD00E98ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA4F7AA282B29AD00E98ED6 /* Assets.xcassets */; };
 		EDA4F7AE282B29AD00E98ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA4F7AC282B29AD00E98ED6 /* LaunchScreen.storyboard */; };
+		EDA69C99282B342500517157 /* SubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA69C98282B342500517157 /* SubjectTableViewCell.swift */; };
+		EDA69CBD282B76B300517157 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA69CBC282B76B300517157 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EDA4F7AA282B29AD00E98ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA4F7AD282B29AD00E98ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA4F7AF282B29AD00E98ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDA69C98282B342500517157 /* SubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectTableViewCell.swift; sourceTree = "<group>"; };
+		EDA69CBC282B76B300517157 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				EDA4F7A1282B29A800E98ED6 /* AppDelegate.swift */,
 				EDA4F7A3282B29A800E98ED6 /* SceneDelegate.swift */,
 				EDA4F7A5282B29A800E98ED6 /* ViewController.swift */,
+				EDA69CBC282B76B300517157 /* Quiz.swift */,
+				EDA69C98282B342500517157 /* SubjectTableViewCell.swift */,
 				EDA4F7A7282B29A800E98ED6 /* Main.storyboard */,
 				EDA4F7AA282B29AD00E98ED6 /* Assets.xcassets */,
 				EDA4F7AC282B29AD00E98ED6 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA69C99282B342500517157 /* SubjectTableViewCell.swift in Sources */,
+				EDA69CBD282B76B300517157 /* Quiz.swift in Sources */,
 				EDA4F7A6282B29A800E98ED6 /* ViewController.swift in Sources */,
 				EDA4F7A2282B29A800E98ED6 /* AppDelegate.swift in Sources */,
 				EDA4F7A4282B29A800E98ED6 /* SceneDelegate.swift in Sources */,
