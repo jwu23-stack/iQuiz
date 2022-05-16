@@ -7,6 +7,22 @@
 
 import UIKit
 
+class Question {
+    var questionTitle : String = ""
+    var option1 : String = ""
+    var option2 : String = ""
+    var option3 : String = ""
+    var answer : String = ""
+    
+    init(questionTitle: String, option1: String, option2: String, option3: String, answer: String) {
+        self.questionTitle = questionTitle
+        self.option1 = option1
+        self.option2 = option2
+        self.option3 = option3
+        self.answer = answer
+    }
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var quizzes : [Quiz] = []
     
@@ -17,6 +33,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         subjectTable.delegate = self
         subjectTable.dataSource = self
         createQuizzes()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let categoryPath = subjectTable.indexPathForSelectedRow {
+            let categoryIndex = categoryPath.row
+            let questionVC = segue.destination as! QuestionViewController
+            questionVC.quizQuestions = quizzes[categoryIndex].questions
+            questionVC.questionIndex = 0
+        }
     }
     
     @IBAction func settingsAlert(_sender: Any) {
@@ -39,14 +64,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+        print("Unwinding Segue")
+    }
+    
     func createQuizzes() {
         quizzes = [
-            Quiz(title: "Mathematics", description: "Smart enough to answer these math questions?!", image: UIImage(named: "Math")!),
-            Quiz(title: "Marvel Super Heroes", description: "Test your superhero knowledge!", image: UIImage(named: "Marvel")!),
-            Quiz(title: "Science", description: "Come test your knowledge with these science trivia!", image: UIImage(named: "Science")!)
+            Quiz(title: "Mathematics", description: "Smart enough to answer these math questions?!", image: UIImage(named: "Math")!, questions: [Question(questionTitle: "What is 3 times 3?", option1: "6", option2: "33", option3: "8", answer: "9"), Question(questionTitle: "What is 4 plus 8", option1: "48", option2: "11", option3: "13", answer: "12")]),
+            Quiz(title: "Marvel Super Heroes", description: "Test your superhero knowledge!", image: UIImage(named: "Marvel")!, questions: [Question(questionTitle: "Who is Iron Man?", option1: "George Washington", option2: "Ted Neward", option3: "Jeff", answer: "Tony Stark")]),
+            Quiz(title: "Science", description: "Come test your knowledge with these science trivia!", image: UIImage(named: "Science")!, questions: [Question(questionTitle: "Which of these is the heaviest metal", option1: "Iron", option2: "Gold", option3: "Copper", answer: "Osmium")])
         ]
     }
-
-
 }
 

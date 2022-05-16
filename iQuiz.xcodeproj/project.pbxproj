@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1752CC282DCBE30064E393 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1752CB282DCBE30064E393 /* QuestionViewController.swift */; };
+		ED1752EE28320B0F0064E393 /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1752ED28320B0F0064E393 /* AnswerViewController.swift */; };
+		ED1752F0283223EA0064E393 /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1752EF283223EA0064E393 /* FinishedViewController.swift */; };
 		EDA4F7A2282B29A800E98ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4F7A1282B29A800E98ED6 /* AppDelegate.swift */; };
 		EDA4F7A4282B29A800E98ED6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4F7A3282B29A800E98ED6 /* SceneDelegate.swift */; };
 		EDA4F7A6282B29A800E98ED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA4F7A5282B29A800E98ED6 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED1752CB282DCBE30064E393 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		ED1752ED28320B0F0064E393 /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		ED1752EF283223EA0064E393 /* FinishedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
 		EDA4F79E282B29A800E98ED6 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA4F7A1282B29A800E98ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA4F7A3282B29A800E98ED6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				EDA4F7A1282B29A800E98ED6 /* AppDelegate.swift */,
 				EDA4F7A3282B29A800E98ED6 /* SceneDelegate.swift */,
 				EDA4F7A5282B29A800E98ED6 /* ViewController.swift */,
+				ED1752CB282DCBE30064E393 /* QuestionViewController.swift */,
+				ED1752ED28320B0F0064E393 /* AnswerViewController.swift */,
+				ED1752EF283223EA0064E393 /* FinishedViewController.swift */,
 				EDA69CBC282B76B300517157 /* Quiz.swift */,
 				EDA69C98282B342500517157 /* SubjectTableViewCell.swift */,
 				EDA4F7A7282B29A800E98ED6 /* Main.storyboard */,
@@ -144,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1752F0283223EA0064E393 /* FinishedViewController.swift in Sources */,
 				EDA69C99282B342500517157 /* SubjectTableViewCell.swift in Sources */,
+				ED1752EE28320B0F0064E393 /* AnswerViewController.swift in Sources */,
 				EDA69CBD282B76B300517157 /* Quiz.swift in Sources */,
+				ED1752CC282DCBE30064E393 /* QuestionViewController.swift in Sources */,
 				EDA4F7A6282B29A800E98ED6 /* ViewController.swift in Sources */,
 				EDA4F7A2282B29A800E98ED6 /* AppDelegate.swift in Sources */,
 				EDA4F7A4282B29A800E98ED6 /* SceneDelegate.swift in Sources */,
