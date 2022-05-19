@@ -10,14 +10,18 @@ import UIKit
 
 class Quiz {
     var title : String = ""
-    var description : String = ""
+    var desc : String = ""
     var image : UIImage = UIImage()
     var questions : [Question] = []
     
-    init(title: String, description: String, image: UIImage, questions: [Question]) {
+    init(title: String, description: String, questions: [Question]) {
         self.title = title
-        self.description = description
-        self.image = image
+        self.desc = description
+        self.image = UIImage(named: "Brain")!
         self.questions = questions
     }
+}
+
+protocol QuizRepository {
+    func getQuizzes() -> [Quiz]
 }

@@ -22,7 +22,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="UP2-61-bcV"/>
                                     <barButtonItem title="Settings" id="USJ-V7-M8A">
                                         <connections>
-                                            <action selector="settingsAlertWith_sender:" destination="BYZ-38-t0r" id="0IA-AL-o2S"/>
+                                            <action selector="displaySettings:" destination="BYZ-38-t0r" id="cjp-RW-d2j"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -139,8 +139,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Possibility #1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNU-DQ-3FO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Possibility #1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNU-DQ-3FO">
                                                     <rect key="frame" x="49" y="31" width="142" height="18.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="142" id="vre-QB-pmL"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -344,7 +347,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SGJ-4o-Hug"/>
+        <segue reference="2LH-AO-FUZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

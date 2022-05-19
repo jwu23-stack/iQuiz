@@ -42,9 +42,9 @@ class QuestionViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         questionsTable.delegate = self
         questionsTable.dataSource = self
-        questionTitleLabel.text = quizQuestions[questionIndex].questionTitle
+        questionTitleLabel.text = quizQuestions[questionIndex].text
         progressLabel.text = "\(questionIndex + 1) out of \(quizQuestions.count)"
-        options = [quizQuestions[questionIndex].option1, quizQuestions[questionIndex].option2, quizQuestions[questionIndex].option3, quizQuestions[questionIndex].answer]
+        options = quizQuestions[questionIndex].answers
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,7 +52,7 @@ class QuestionViewController: UIViewController, UITableViewDelegate, UITableView
         answerVC.quizQuestions = quizQuestions
         answerVC.questionIndex = questionIndex
         answerVC.questionText = questionTitleLabel.text!
-        answerVC.selectedAnswer = options[selected]
+        answerVC.selectedAnswer = String(selected)
         answerVC.totalAnsweredQuestions = totalAnsweredQuestions
         answerVC.totalCorrectAnswers = totalCorrectAnswers
     }

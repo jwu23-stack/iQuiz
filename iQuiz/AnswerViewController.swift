@@ -25,18 +25,18 @@ class AnswerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let currentQuestionInQuiz : Question = quizQuestions[questionIndex]
-        let correctAnswer : String = currentQuestionInQuiz.answer
+        let correctAnswer : Int = Int(currentQuestionInQuiz.answer)! - 1 // change it to zero-based index
         
         // set UI elements
         questionTextLabel.text = questionText
-        answerTextLabel.text = correctAnswer
+        answerTextLabel.text = quizQuestions[questionIndex].answers[correctAnswer]
         
         // update question index in quizQuestions array and total answered questions
         questionIndex += 1
         totalAnsweredQuestions += 1
         
         // update correctOrIncorrectLabel based on selected answer
-        if selectedAnswer == correctAnswer {
+        if Int(selectedAnswer)! == correctAnswer {
             correctOrIncorrectLabel.text = "Correct"
             correctOrIncorrectLabel.textColor = UIColor.green
             totalCorrectAnswers += 1
